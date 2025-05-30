@@ -64,7 +64,7 @@ export const App = () => {
     if (!selectedTickets.length) {
       return;
     }
-    window.gtag('event', '4920_engage_var6');
+    window.gtag('event', 'june_and_engage_var6');
     setLoading(true);
     sendDataToGA({
       engage_price: selectedTickets.length * TICKET_PRICE,
@@ -189,7 +189,7 @@ export const App = () => {
             block
             view="secondary"
             onClick={() => {
-              window.gtag('event', '4920_combination_var6');
+              window.gtag('event', 'june_and_combination_var6');
               setTickets(prev =>
                 prev.map((ticket, index) => {
                   if (index === activeSlide) {
@@ -259,7 +259,7 @@ export const App = () => {
           block
           view="primary"
           onClick={() => {
-            window.gtag('event', '4920_luck_var6');
+            window.gtag('event', 'june_and_luck_var6');
             setStep('numbers');
           }}
         >
